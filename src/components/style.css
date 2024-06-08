@@ -1,0 +1,100 @@
+body, html {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+  
+* {
+    box-sizing: border-box;
+}
+  
+.login {
+    
+    min-height: 720px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.container {
+    position: absolute;
+    left: 0;
+    margin: 20px;
+    max-width: 320px;
+    padding: 16px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+input[type=email], 
+input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: 1px solid black;
+    background: none;
+    border-radius: 8px;
+}
+  
+input[type=email]:focus, 
+input[type=password]:focus 
+{
+    background-color: none;
+    outline: none;
+}
+  
+#btn {
+    background: blueviolet;
+    color: black;
+    padding: 16px 20px;
+    border: 2px solid black;
+    font-size: large;
+    box-shadow: white;
+    cursor: pointer;
+    width: 50%;
+    opacity: 0.8;
+    border-radius: 10px;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    transform: 0.5s;
+    font-weight: bolder;
+}
+#btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+#btn span::after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+#btn:hover span {
+    padding-right: 15px;
+    
+}
+#btn:hover span::after{
+    opacity: 1;
+    right:0;
+}
+#fp{
+    color: black;
+    right: 0;
+    padding-left: 150px;
+}
+#nu{
+    color: black;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+#sp{
+    color: blue;
+}

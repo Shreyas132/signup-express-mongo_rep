@@ -1,0 +1,91 @@
+body, html {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+  
+* {
+    box-sizing: border-box;
+}
+ 
+.tray {
+    position: absolute;
+    margin: 25px;
+    margin-left: 35%;
+    max-width: 350px;
+    padding: 16px;
+    background: transparent;
+    backdrop-filter: blur(30px);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+    border: 1px solid black;
+    
+}
+input[type=text], 
+input[type=email],
+input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: 1px solid black;
+    background: none;
+    border-radius: 8px;
+}
+input[type=text]:focus, 
+input[type=email]:focus,
+input[type=password]:focus 
+{
+    background-color: none;
+    outline: none;
+}
+.signup{
+    
+      
+    min-height: 720px;
+      
+        
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+#btn-1{
+    color: white;
+    background-color: #1a995e;
+    width: 130px;
+    font-weight: bolder;
+    padding: 16px 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin-left: 90px;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    transform: 0.5s;
+}
+#btn-1 span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+#btn-1 span::after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+
+}
+#btn-1:hover span {
+    padding-right: 15px;
+    color: black;
+    
+}
+#btn-1:hover span::after{
+    opacity: 1;
+    right:0;
+    color: black;
+}
